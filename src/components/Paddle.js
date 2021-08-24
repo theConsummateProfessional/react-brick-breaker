@@ -5,13 +5,14 @@ export default function Paddle() {
     const {x} = useMousePosition();
 
     let position = (x) => {
-        console.log("running")
-        if(x - 200 > 1000) {
+        if(x - 475 > 1000) {
             return 1000;
-        } else if (x - 200 < 0) {
+        } else if (x - 475 < 0) {
             return 0;
         } else {
-            return x - 200;
+            console.log(-1*(window.screen.width - x*2));
+            console.log(x - 475);
+            return x - 475;
         }
     }
 
