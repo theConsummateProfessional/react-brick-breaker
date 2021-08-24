@@ -1,5 +1,6 @@
 import React from 'react';
 import Paddle from '../components/Paddle';
+import Ball from '../components/Ball';
 
 export default function Game() {
 
@@ -17,6 +18,7 @@ export default function Game() {
                 'height': '400px'
             }}>
                 <Paddle />
+                <Ball />
             </div>
         </>
     )
